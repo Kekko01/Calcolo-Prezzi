@@ -1,0 +1,36 @@
+/* THIS FILE WILL BE OVERWRITTEN BY DEV-C++ */
+/* DO NOT EDIT! */
+
+#include <windows.h> // include for version info constants
+
+
+A ICON "Calcolo Prezzi.ico"
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 1,0,1,1
+PRODUCTVERSION 1,0,1,1
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "041004E4"
+    {
+      VALUE "CompanyName", "Kekko01"
+      VALUE "FileVersion", "1.0.1.1"
+      VALUE "FileDescription", "Piccolo Tool utile per le aziende per calcolare i prezzi finali di vendita dei loro prodotti. Disponibili gli sconti e percentuale di guadagno, IVA fissata al 22%."
+      VALUE "InternalName", ""
+      VALUE "LegalCopyright", "Kekko01"
+      VALUE "LegalTrademarks", "Francesco Ciociola"
+      VALUE "OriginalFilename", ""
+      VALUE "ProductName", "Calcolo Prezzi"
+      VALUE "ProductVersion", "1.0.1.1"
+    }
+  }
+  BLOCK "VarFileInfo"
+  {
+    VALUE "Translation", 0x0410, 1252
+  }
+}
