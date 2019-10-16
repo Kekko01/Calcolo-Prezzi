@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
+//Programma creato da Francesco Ciociola - https://kekko01.altervista.org - 2019 GitHub: https://GitHub.com/Kekko01
 
 int main(int argc, char** argv) {
 	system("title CALCOLO PREZZI");
@@ -8,7 +9,7 @@ int main(int argc, char** argv) {
 	float percguadagno;
 	cin>>percguadagno;
 	percguadagno/=100;
-	
+
 	int numerosconti;
 	cout<<"Inserisci il numero (intero) di sconti da fare: ";
 	cin>>numerosconti;
@@ -22,12 +23,12 @@ int main(int argc, char** argv) {
 			sconti[i]=sconto;
 		}
 	}
-	
+
 	float importo=1;
 	while(importo!=0){
 		cout<<"\n\nInserisci l'importo del prezzo del fornitore (se e' con la virgola, usare il punto): ";
 		cin>>importo;
-		
+
 		float totale=importo;
 		if(numerosconti>0){
 			for(int i=0; i<numerosconti; i++){
@@ -37,10 +38,10 @@ int main(int argc, char** argv) {
 		totale=totale+totale*percguadagno;
 		float iva=0.22;
 		totale=totale+totale*iva;
-		
+
 		cout<<"Il prezzo di vendita di "<<importo<<" euro con perc. di guadagno al "<<percguadagno*100<<"%, l'IVA al 22% e "<<numerosconti<<" sconto/i e': "<<totale;
-		
+
 	}
-	
+
 	return 0;
 }
