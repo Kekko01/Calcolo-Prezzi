@@ -23,8 +23,14 @@ int main(int argc, char** argv) {
 			sconti[i]=sconto;
 		}
 	}
-
+	
+	float iva;
+	cout<<"Inserire l'IVA da applicare (metti numero intero, es: 22% = 22): ";
+	cin>>iva;
+	iva/=100;
+	
 	float importo=1;
+	cout<<"Per chiudere il programma inserire 0"<<endl;
 	while(importo!=0){
 		cout<<"\n\nInserisci l'importo del prezzo del fornitore (se e' con la virgola, usare il punto): ";
 		cin>>importo;
@@ -36,7 +42,6 @@ int main(int argc, char** argv) {
 			}
 		}
 		totale=totale+totale*percguadagno;
-		float iva=0.22;
 		totale=totale+totale*iva;
 
 		cout<<"Il prezzo di vendita di "<<importo<<" euro con perc. di guadagno al "<<percguadagno*100<<"%, l'IVA al 22% e "<<numerosconti<<" sconto/i e': "<<totale;

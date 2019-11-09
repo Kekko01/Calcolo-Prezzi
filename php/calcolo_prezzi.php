@@ -1,4 +1,4 @@
-<!--Programma creato da Francesco Ciociola - https://kekko01.altervista.org - 2019 GitHub: https://GitHub.com/Kekko01!-->
+<!--Programma creato da Francesco Ciociola - https://kekko01.altervista.org - 2019 GitHub: https://GitHub.com/Kekko01! Versione: 1.1-->
 <!DOCTYPE html>
 <html lang="it" dir="ltr">
   <head>
@@ -13,18 +13,23 @@
       <form class="" action="<?php echo $_PHP['SELF']; ?>" method="post">
         <div class="form-row">
           <div class="col-3">
+            <label>Percentuale Guadagno</label>
             <input type="number" class="form-control" placeholder="Percentuale Guadagno" name="percguadagno" required>
-          </div>
+          </div><br>
           <div class="col">
+            <label>Sconto 1</label>
             <input type="number" class="form-control" placeholder="Sconto 1" name="sconto1">
           </div>
           <div class="col">
+            <label>Sconto 2</label>
             <input type="number" class="form-control" placeholder="Sconto 2" name="sconto2">
           </div>
           <div class="col">
+            <label>Sconto 3</label>
             <input type="number" class="form-control" placeholder="Sconto 3" name="sconto3">
           </div>
           <div class="col">
+            <label>Sconto 4</label>
             <input type="number" class="form-control" placeholder="Sconto 4" name="sconto4">
         </div><br>
         <div class="form-row align-items-center">
@@ -32,7 +37,7 @@
             <label class="sr-only" for="inlineFormInputName">Importo del Venditore</label>
             <input type="number" class="form-control" id="inlineFormInputName" name="importo" required>
           </div>
-          <div class="col-auto my-1">
+          <div class="col-auto my-1"><br>
             <button type="submit" class="btn btn-primary">Calcola</button>
           </div>
         </div>
