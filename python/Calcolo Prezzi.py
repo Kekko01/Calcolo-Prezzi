@@ -29,5 +29,5 @@ def main():
         totale=totale+totale*percguadagno
         totale=totale+totale*iva
 
-        print("Il prezzo di vendita di",importo,"euro con perc. di guadagno al",percguadagno*100,"%, l'IVA al 22% e",numerosconti,"sconto/i e':",totale)
+        print("Il prezzo di vendita di",importo,"euro con perc. di guadagno al",percguadagno*100,"%, l'IVA al",int(iva*100),"% e",numerosconti,"sconto/i e':",totale)
 main()

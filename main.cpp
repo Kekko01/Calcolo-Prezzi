@@ -44,7 +44,7 @@ int main(int argc, char** argv) {
 		totale=totale+totale*percguadagno;
 		totale=totale+totale*iva;
 
-		cout<<"Il prezzo di vendita di "<<importo<<" euro con perc. di guadagno al "<<percguadagno*100<<"%, l'IVA al 22% e "<<numerosconti<<" sconto/i e': "<<totale;
+		cout<<"Il prezzo di vendita di "<<importo<<" euro con perc. di guadagno al "<<percguadagno*100<<"%, l'IVA al "<<iva*100<<"% e "<<numerosconti<<" sconto/i e': "<<totale;
 
 	}
 
