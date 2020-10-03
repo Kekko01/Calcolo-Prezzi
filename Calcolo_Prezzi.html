@@ -1,0 +1,73 @@
+<!--Programma creato da Francesco Ciociola - https://kekko01.altervista.org - 2019 GitHub: https://GitHub.com/Kekko01! Versione: 1.1-->
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>CALCOLO PREZZI by Kekko01</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        function calcolo() {
+            var percguadagno = document.getElementById("percguadagno").value / 100;
+            var sconto1 = document.getElementById("sconto1").value / 100;
+            var sconto2 = document.getElementById("sconto2").value / 100;
+            var sconto3 = document.getElementById("sconto3").value / 100;
+            var sconto4 = document.getElementById("sconto4").value / 100;
+            var importo = document.getElementById("importo").value;
+            var totale = importo;
+            totale = totale - totale * sconto1;
+            totale = totale - totale * sconto2;
+            totale = totale - totale * sconto3;
+            totale = totale - totale * sconto4;
+            totale = totale + totale * percguadagno;
+            var iva = 0.22;
+            totale = totale + totale * iva ;
+            alert("Prezzo di vendita: " + totale + "€");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h3>CALCOLO PREZZI</h3>
+        <div class="form-row">
+            <div class="col-3">
+                <label>Percentuale Guadagno</label>
+                <input type="number" class="form-control" placeholder="Percentuale Guadagno" name="percguadagno" id="percguadagno" required>
+            </div><br>
+            <div class="col">
+                <label>Sconto 1</label>
+                <input type="number" class="form-control" placeholder="Sconto 1" name="sconto1" id="sconto1">
+            </div>
+            <div class="col">
+                <label>Sconto 2</label>
+                <input type="number" class="form-control" placeholder="Sconto 2" name="sconto2" id="sconto2">
+            </div>
+            <div class="col">
+                <label>Sconto 3</label>
+                <input type="number" class="form-control" placeholder="Sconto 3" name="sconto3" id="sconto3">
+            </div>
+            <div class="col">
+                <label>Sconto 4</label>
+                <input type="number" class="form-control" placeholder="Sconto 4" name="sconto4" id="sconto4">
+            </div><br>
+            <div class="form-row align-items-center">
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="inlineFormInputName">Importo del Venditore</label>
+                    <input type="number" class="form-control" name="importo" id="importo" required>
+                </div>
+                <div class="col-auto my-1"><br>
+                    <button class="btn btn-primary" onclick="calcolo()">Calcola</button>
+                </div>
+            </div>
+    </div>
+    <div class="alert alert-primary" role="alert">
+        Creato da <a href="https://kekko01.altervista.org" class="alert-link">Kekko01</a>. Buon uso!
+    </div>
+</body>
+
+</html>
