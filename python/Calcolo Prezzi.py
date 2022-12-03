@@ -11,7 +11,7 @@ def main():
     sconti=[]
     if numerosconti>0:
         for i in range(numerosconti):
-            sconto=float(input("Inserisci lo sconto numero {} (senza il %): ".format(i+1)))
+            sconto = float(input(f"Inserisci lo sconto numero {i + 1} (senza il %): "))
             sconto/=100
             sconti.append(sconto)
 
